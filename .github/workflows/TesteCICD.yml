@@ -1,12 +1,15 @@
 name: CI
 
 on:
-  brances: [ "main" ]
-
-jobs: 
+    push: 
+      branches: [ "main" ]
+jobs:
   build:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - uses: actions/checkout@v4
       - name: Executar uma linha de comando
         run: echo Meu primeiro comando com o gitActions
+
+
+        
