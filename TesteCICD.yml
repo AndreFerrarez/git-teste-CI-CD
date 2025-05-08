@@ -1,7 +1,8 @@
 name: CI
 
 on:
-  brances: [ "main" ]
+    push:
+      brances: [ "main" ]
 
 jobs: 
   build:
